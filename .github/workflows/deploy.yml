@@ -34,5 +34,5 @@ jobs:
             source venv/bin/activate
             pip install -r requirements.txt
             # останавливаем старый процесс (если был)
-            pkill -f "python bot.py" || true
-            nohup venv/bin/python bot.py > bot.log 2>&1 &
+            pkill -f "python main.py" || true
+            nohup venv/bin/python main.py > bot.log 2>&1 &
